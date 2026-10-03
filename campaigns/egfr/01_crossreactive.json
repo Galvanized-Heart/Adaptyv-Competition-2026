@@ -1,0 +1,35 @@
+{
+  "campaign_name": "egfr_crossreactive_v0",
+  "project_folder": "results/egfr_crossreactive_v0",
+
+  "modality": "binder",
+
+  "targets": [
+    {
+      "name": "human_EGFR_DIII",
+      "target_path": "../../targets/egfr/prepared/human_egfr_domain3.cif",
+      "chains": "A",
+      "weight": 1.0
+    },
+    {
+      "name": "mouse_EGFR_DIII",
+      "target_path": "../../targets/egfr/prepared/mouse_egfr_domain3.cif",
+      "chains": "A",
+      "weight": 1.0
+    }
+  ],
+
+  "binder_lengths": [60, 100],
+
+  "number_of_final_designs": 5,
+  "max_trajectories": 50,
+
+  "min_iptm_final": 0.6,
+  "min_monomer_plddt_final": 0.7,
+
+  "campaign_seed": 0,
+
+  "aa_bias": {
+    "C": 0
+  }
+}
